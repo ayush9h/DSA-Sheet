@@ -1,3 +1,5 @@
+//chebyshev distance 
+// calculated by using max(xdiff,ydiff)
 class Solution {
 public:
     int toTime(vector<int> &from,vector<int> &to)
