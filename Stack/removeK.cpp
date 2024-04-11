@@ -5,6 +5,7 @@ public:
         vector<char> stk;
         string ans;
 
+        // For numbers in arbitrary order
         for(char c:num)
         {
             while(k>0 && !stk.empty() && stk.back() > c)
@@ -15,6 +16,7 @@ public:
             stk.push_back(c);
         }   
 
+        // For numbers in ascending order if k remains 
         while(k > 0)
         {
             stk.pop_back();
